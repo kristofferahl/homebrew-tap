@@ -5,13 +5,13 @@
 class Mavis < Formula
   desc "unconventional commit"
   homepage "https://github.com/kristofferahl/mavis"
-  version "0.1.2"
+  version "0.2.0"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kristofferahl/mavis/releases/download/v0.1.2/mavis_v0.1.2_darwin_amd64.zip"
-      sha256 "b0fcb59f49a7d3dcfc64ef2b748348157af6048f933d8d406a1fcf25b31b4a16"
+      url "https://github.com/kristofferahl/mavis/releases/download/v0.2.0/mavis_v0.2.0_darwin_amd64.zip"
+      sha256 "8b04ee3f53ee2c2ca09a61786a186c3829a877b6ca0a484461029326166b1076"
 
       def install
         bin.install 'mavis'
@@ -22,8 +22,8 @@ class Mavis < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kristofferahl/mavis/releases/download/v0.1.2/mavis_v0.1.2_darwin_arm64.zip"
-      sha256 "3846d67ce8f8a2145affd7a8d8bbd637a4b22d796116fbabe4ee53999babb609"
+      url "https://github.com/kristofferahl/mavis/releases/download/v0.2.0/mavis_v0.2.0_darwin_arm64.zip"
+      sha256 "0fd984e9503dd676bd3ab105aa9f2c1bb855e36675236df29e6a9228854f89e5"
 
       def install
         bin.install 'mavis'
@@ -38,8 +38,8 @@ class Mavis < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kristofferahl/mavis/releases/download/v0.1.2/mavis_v0.1.2_linux_amd64.tar.gz"
-        sha256 "e18d166f6922b7367db1fa6830acfb6550298f41096a707471b395f3c7fc4a0d"
+        url "https://github.com/kristofferahl/mavis/releases/download/v0.2.0/mavis_v0.2.0_linux_amd64.tar.gz"
+        sha256 "a6eda2160a94834cc690da2356d6a05efb4f435f160799b8913cd55718f36ea8"
 
         def install
           bin.install 'mavis'
@@ -52,8 +52,8 @@ class Mavis < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kristofferahl/mavis/releases/download/v0.1.2/mavis_v0.1.2_linux_arm64.tar.gz"
-        sha256 "ce6628f8e2825e0325873fc2fd4ad7f5fa955264bf17722bbc03e6afb7a10732"
+        url "https://github.com/kristofferahl/mavis/releases/download/v0.2.0/mavis_v0.2.0_linux_arm64.tar.gz"
+        sha256 "1c1d8374c022ae4707414caf568a2ee2de87acf42497bc84a40324c8ad8a5233"
 
         def install
           bin.install 'mavis'
